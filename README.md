@@ -28,8 +28,7 @@ rm -ri folder-name
 
 # Remove a directory and its contents without prompting
 rm -rf -- ./temp2-dir
-
-
+```
 ![alt text](task2.png)
 
 ## Task 3: Rename Files and Check Disk Usage
