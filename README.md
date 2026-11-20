@@ -26,16 +26,11 @@ rm filename.txt
 # Remove a directory and its contents, asking before each deletion
 rm -ri folder-name
 
-![alt text](image1.png)
-
 # Remove a directory and its contents without prompting
-rm -rf folder-name
-```
+rm -rf -- ./temp2-dir
 
 
-**Warning:** `rm -rf` permanently deletes data. Double-check the path before running it.
-
-<!-- Add screenshot here -->
+![alt text](task2.png)
 
 ## Task 3: Rename Files and Check Disk Usage
 
@@ -46,12 +41,6 @@ The `mv` command renames a file or directory:
 ```bash
 mv old-name.txt new-name.txt
 mv old-folder-name new-folder-name
-```
-
-To move and rename a file at the same time:
-
-```bash
-mv filename.txt folder/new-filename.txt
 ```
 
 ### Check Disk Usage
@@ -67,15 +56,9 @@ Use `du` to show the size of files and directories:
 ```bash
 # Show the size of every item in the current directory
 du -h
-
-# Show only a summary of the current directory
-du -sh
-
-# Show the size of a specific folder
-du -sh folder-name
 ```
 
-<!-- Add screenshot here -->
+![alt text](task3.png)
 
 ## Task 4: Linux Permissions
 
@@ -105,9 +88,6 @@ chmod u+rw file.txt
 # Make a file readable and writable by everyone
 chmod 666 file.txt
 
-# Give the owner full permissions and others read/execute permissions
-chmod 755 script.sh
-```
 
 View permissions with:
 
@@ -115,13 +95,8 @@ View permissions with:
 ls -l
 ```
 
-Example permission modes:
+![alt text](task4.png)
 
-- `644`: owner can read/write; group and others can read
-- `755`: owner can read/write/execute; group and others can read/execute
-- `777`: all users have read, write, and execute permissions
-
-<!-- Add screenshot here -->
 
 ## Task 5: List Running Processes
 
@@ -137,21 +112,9 @@ Use `ps aux` to list processes from the entire system:
 ps aux
 ```
 
-To search for a specific process:
 
-```bash
-ps aux | grep process-name
-```
+![alt text](task5.png)
 
-An alternative, interactive process viewer is:
-
-```bash
-top
-```
-
-Press `q` to exit `top`.
-
-<!-- Add screenshot here -->
 
 ## Screenshot Summary
 
